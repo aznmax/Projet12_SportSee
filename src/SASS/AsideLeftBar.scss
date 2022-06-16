@@ -1,0 +1,33 @@
+.AsideLeftBar {
+    display: flex;
+    position: fixed;
+    width: 6%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    top: 9%;
+    background: black;
+}
+
+.AsideLeftBar .AsideLeftBar-div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 10%;
+    margin-top: 91px;
+}
+
+.AsideLeftBar .AsideLeftBar-div img {
+    background: #f1f1f1;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.AsideLeftBar .AsideLeftBar-text {
+    text-orientation: sideways-right;
+    color: #f1f1f1;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    margin-bottom: 170px;
+}
