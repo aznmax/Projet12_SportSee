@@ -1,0 +1,73 @@
+@import "../../Sass/_variables.scss";
+
+.home {
+	margin-top: 141px;
+	margin-left: 100px;
+	margin-bottom: 100px;
+	margin-right: 100px;
+	width: 100%;
+
+
+	h2 {
+		font-size: 4.8rem;
+    	font-weight: 500;
+	}
+
+	em {
+		color: $primary;
+		font-style: normal;
+	}
+	.descript {
+		width: 100%;
+		max-width: 500px;
+
+		p {
+			margin-top: 40px;
+			font-size: 1.6rem;
+		}
+	}
+	
+	.home-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 20px;
+		max-width: 500px;
+		min-width: 300px;
+
+		.btn-user12 button{
+			padding: 6px 20px;
+			border-radius: 15px;
+			margin-top: 20px;
+			font-size: 1.5rem;
+			font-weight: 500;
+			border: 2px solid black;
+			transition: all 0.4s ease;
+	
+			&:hover  {
+				box-shadow: 0 0 6px $primary;
+			}
+		}
+		.btn-user18 button{
+			padding: 6px 20px;
+			border-radius: 15px;
+			margin-top: 20px;
+			font-size: 1.5rem;
+			font-weight: 500;
+			border: 2px solid black;
+			transition: all 0.4s ease;
+	
+			&:hover  {
+				box-shadow: 0 0 6px $primary;
+			}
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 1012px) {
+	.home-buttons {
+		flex-direction: column;
+	}
+}

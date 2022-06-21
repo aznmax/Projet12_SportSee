@@ -1,0 +1,148 @@
+@import "../../../Sass/_variables.scss";
+
+.barChart {
+	width: 100%;
+	height: 320px;
+	background-color: #FBFBFB;
+	margin-top: 80px;
+	border-radius: 5px;
+	// overflow: hidden;
+	position: relative;
+
+	&-title {
+		position: absolute;
+		top: 37px;
+		left: 42px;
+		margin: 0;
+		z-index: 20;
+		width: max-content;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	
+	.recharts-legend-item {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.recharts-responsive-container {
+		width: 100%;
+		height: 80%;
+	}
+	.recharts-wrapper {
+		width: 100%;
+		height: 100%;
+		padding-left: 40px;
+		position: relative;
+
+	}
+
+	.custom-tooltip-line {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $primary;
+		color: #fff;
+
+		.desc {
+			padding: 13px 8px;
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+	}
+
+	.custom-tooltip-legend {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 37px;
+		right: 35px;
+
+		.kilogram {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.4rem;
+			font-weight: 500;
+			color: #74798C;
+
+			.desc {
+				margin-left: 7px;
+			}
+
+			.blackRound {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: #282D30;
+			}
+		}
+		.calories {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin-left: 30px;
+			font-size: 1.4rem;
+			font-weight: 500;
+			color: #74798C;
+
+			.desc {
+				margin-left: 7px;
+			}
+
+			.redRound {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: $primary;
+			}
+		}
+	}
+
+	.custom-tooltip-bar {
+		height: auto;
+		width: 8px;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+		background-color: black;
+		color: black;
+	}
+
+	.custom-cursor {
+		width: 60%;
+		height: 100%;
+		background-color: $primary;
+
+		h1 {
+			padding: 40px;
+		}
+	}
+
+	.recharts-tooltip-cursor {
+		width: 50px !important;
+		height: 100%;
+		background-color: $primary;
+
+		h1 {
+			padding: 40px;
+		}
+	}
+}
+
+tspan {
+	font-size: 1.3rem;
+    font-weight: 200;
+}
+svg {
+	width: 100%;
+}
+
+.tick {
+	fill: $primary;
+}
