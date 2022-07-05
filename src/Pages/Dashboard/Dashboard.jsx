@@ -4,11 +4,11 @@ import SessionChartD3 from "../../components/Charts/LineChart/SessionChartD3";
 import PerformancesChart from '../../components/Charts/RadarChart/PerformancesChart';
 import ScoreChart from '../../components/Charts/CircleChart/ScoreChart';
 import Nutriment from '../../components/Nutriment/Nutriment';
-import { getUserDatas } from "../../CallsApis/requests";
+import { getUserDatas } from "../../ApiComponents/requests";
 import {useState, useEffect} from 'react';
 import Loader from "../../components/Loader/Loader";
 import Error from "../Error/Error";
-import User from "../../Models/User";
+import User from "../../ModelsUser/User";
 import {useParams} from "react-router-dom";
 
 
